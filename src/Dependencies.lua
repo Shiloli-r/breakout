@@ -18,6 +18,12 @@ require 'src/constants'
 -- the ball that travels around, breaking bricks and triggering lives lost
 require 'src/Ball'
 
+-- the entities in our game map that give us points when we collide with them
+require 'src/Brick'
+
+-- a class used to generate our brick layouts (levels)
+require 'src/LevelMaker'
+
 -- the rectangular entity the player controls, which deflects the ball
 require 'src/Paddle'
 

@@ -40,4 +40,5 @@ require 'src/Util'
 -- each frame, to avoid bulky code in main.lua
 require 'src/states/BaseState'
 require 'src/states/PlayState'
+require 'src/states/ServeState'
 require 'src/states/StartState'

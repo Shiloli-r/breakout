@@ -71,6 +71,9 @@ function PlayState:update(dt)
         -- only check collision if we're in play
         if brick.inPlay and self.ball:collides(brick) then
 
+            -- add to score
+            self.score = self.score + 10
+
             -- trigger the brick's hit function, which removes it from play
             brick:hit()
 
@@ -120,6 +123,25 @@ function PlayState:update(dt)
         end
     end
 
+    -- if ball goes below bounds, revert to serve state and decrease health
+    if self.ball.y >= VIRTUAL_HEIGHT then
+        self.health = self.health - 1
+        gSounds['hurt']:play()
+
+        if self.health == 0 then 
+            gStateMachine:change('game-over', {
+                score = self.score
+            })
+        else
+            gStateMachine:change('serve', {
+                paddle = self.paddle,
+                bricks = self.bricks,
+                health = self.health,
+                score = self.score                
+            })
+        end
+    end
+
     if love.keyboard.wasPressed('escape') then 
         love.event.quit()
     end
@@ -133,6 +155,9 @@ function PlayState:render()
 
     self.paddle:render()
     self.ball:render()
+
+    renderScore(self.score)
+    renderHealth(self.health)
 
     -- pause text, if paused
     if self.paused then

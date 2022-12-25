@@ -32,7 +32,8 @@ function StartState:update(dt)
                 paddle = Paddle(1),
                 bricks = LevelMaker.createMap(1),
                 health = 3,
-                score = 0,
+                score = 10000,
+                highScores = self.highScores,
                 level = 1
             })
         else

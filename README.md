@@ -1,5 +1,6 @@
-# breakout
-A remake of the BreakOut game
+# Breakout
+A remake of the [Atari](https://en.wikipedia.org/wiki/Atari,_Inc.) BreakOut game <br>
+<i>[Breakout](https://en.wikipedia.org/wiki/Breakout_(video_game)) is an arcade video game developed and published by Atari, Inc. and released on May 13, 1976. It was designed by Steve Wozniak, based on conceptualization from Nolan Bushnell and Steve Bristow who were influenced by the seminal 1972 Atari arcade game Pong </i>
 
 # GamePlay
 

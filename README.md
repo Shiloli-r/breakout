@@ -3,9 +3,9 @@ A remake of the [Atari](https://en.wikipedia.org/wiki/Atari,_Inc.) BreakOut game
 <i>[Breakout](https://en.wikipedia.org/wiki/Breakout_(video_game)) is an arcade video game developed and published by Atari, Inc. and released on May 13, 1976. It was designed by Steve Wozniak, based on conceptualization from Nolan Bushnell and Steve Bristow who were influenced by the seminal 1972 Atari arcade game Pong </i>
 
 ## How to Run
-<li>Download and install the [LÖVE2D](https://love2d.org/) game engine.
-<li>Open the repository folder with LÖVE2D (ensure it contains the `main.lua` file). It may be easier to drag and drop the folder to LÖVE2D executable
-<li> Alternatively, use the `love-launcher` extension on VSCode to launch the game.
+Download and install the  [LÖVE2D](https://love2d.org/) game engine. 
+Open the repository folder with LÖVE2D (ensure it contains the `main.lua` file). It may be easier to drag and drop the folder to LÖVE2D executable. 
+Alternatively, use the `love-launcher` extension on VSCode to launch the game. 
 
 ## GamePlay
 
@@ -23,9 +23,9 @@ Select your paddle
 <img src="images/paddle.png" width=700>
 
 ### Begin
-Begin play
+Begin play <br>
 <img src="images/level1.png" width=700>
 
 ### Play
-Play the game
+Play the game <br>
 <img src="images/gameplay.png" width=700>
